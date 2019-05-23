@@ -1,0 +1,64 @@
+{
+    "name": "ammonkc/laravel-sabre-api",
+    "description": "Laravel Sabre REST API",
+    "keywords": [
+        "ammonkc",
+        "laravel-sabre-api"
+    ],
+    "homepage": "https://github.com/ammonkc/laravel-sabre-api",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ammon Casey",
+            "email": "acasey@panda-group.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": {
+        "sabre-api": {
+            "type": "path",
+            "url": "/Users/ammonkc/Develop/src/sabre-api",
+            "options": {
+                "symlink": false
+            }
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "ammonkc/sabre-api": "@dev",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ammonkc\\Sabre\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ammonkc\\Sabre\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ammonkc\\Sabre\\SabreServiceProvider"
+            ],
+            "aliases": {
+                "Sabre": "Ammonkc\\Sabre\\SabreFacade"
+            }
+        }
+    }
+}
