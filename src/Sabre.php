@@ -3,6 +3,7 @@
 namespace Ammonkc\Sabre;
 
 use Ammonkc\SabreApi\Client;
+use Illuminate\Foundation\Application;
 
 class Sabre
 {
@@ -68,7 +69,7 @@ class Sabre
      * @param  \Ammonkc\SabreApi\Client $client
      * @param  array
      */
-    public function __construct($app, Client $client, $defaults = [])
+    public function __construct(Application $app, Client $client, $defaults = [])
     {
         $this->app = $app;
         $this->client = $client;
@@ -76,6 +77,9 @@ class Sabre
         $this->config = $this->app['config'];
         $this->cache = $this->app['cache'];
         $this->tokenRepository = new TokenRepository($this->cache);
+
+        $this->client->setParameter('pseudoCityCode', $this->config->get('sabre.pseudo_city_code'));
+        $this->client->setDevMode($this->config->get('app.debug'));
     }
 
     /**
