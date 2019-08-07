@@ -1,4 +1,4 @@
-# Very short description of the package
+# Laravel Sabre REST Api Client
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ammonkc/laravel-sabre-api.svg?style=flat-square)](https://packagist.org/packages/ammonkc/laravel-sabre-api)
 [![Build Status](https://img.shields.io/travis/ammonkc/laravel-sabre-api/master.svg?style=flat-square)](https://travis-ci.org/ammonkc/laravel-sabre-api)
@@ -12,7 +12,7 @@ A Laravel 5 package for the ammonkc/sabre-api REST api client
 You can install the package via composer:
 
 ```bash
-composer require ammonkc/laravel-sabre-api
+composer require pandatravel/laravel-sabre-api
 ```
 
 ## Usage
