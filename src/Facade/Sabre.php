@@ -1,13 +1,13 @@
 <?php
 
-namespace Ammonkc\Sabre;
+namespace Ammonkc\Sabre\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \Ammonkc\Sabre\Skeleton\SkeletonClass
  */
-class SabreFacade extends Facade
+class Sabre extends Facade
 {
     /**
      * Get the registered name of the component.
