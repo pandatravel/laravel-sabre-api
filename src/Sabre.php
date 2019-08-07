@@ -79,7 +79,7 @@ class Sabre
         $this->tokenRepository = new TokenRepository($this->cache);
 
         $this->client->setParameter('pseudoCityCode', $this->config->get('sabre.pseudo_city_code'));
-        $this->client->setDevMode($this->config->get('app.debug'));
+        $this->client->setDevMode($this->config->get('sabre.dev_mode'));
     }
 
     /**
