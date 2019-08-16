@@ -3,6 +3,7 @@
 namespace Ammonkc\Sabre;
 
 use Ammonkc\SabreApi\Client;
+use Ammonkc\Sabre\Contracts\Sabre as SabreContract;
 use Illuminate\Support\ServiceProvider;
 
 class SabreServiceProvider extends ServiceProvider
@@ -59,7 +60,7 @@ class SabreServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'sabre');
 
         // Register the main class to use with the facade
-        $this->app->singleton('sabre', function ($app) {
+        $this->app->singleton(SabreContract::class, function ($app) {
             return new Sabre($app, new Client($app['config']->get('sabre.defaults')));
         });
     }

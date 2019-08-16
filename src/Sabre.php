@@ -3,9 +3,10 @@
 namespace Ammonkc\Sabre;
 
 use Ammonkc\SabreApi\Client;
+use Ammonkc\Sabre\Contracts\Sabre as SabreContract;
 use Illuminate\Foundation\Application;
 
-class Sabre
+class Sabre implements SabreContract
 {
     /**
      * The application instance.

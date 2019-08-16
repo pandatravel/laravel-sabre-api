@@ -16,6 +16,6 @@ class Sabre extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'sabre';
+        return \Ammonkc\Sabre\Contracts\Sabre::class;
     }
 }
