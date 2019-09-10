@@ -1,8 +1,11 @@
 {
     "name": "ammonkc/laravel-sabre-api",
     "description": "Laravel Sabre REST API",
+    "version": "0.1.1",
     "keywords": [
         "ammonkc",
+        "sabre",
+        "panda travel",
         "laravel-sabre-api"
     ],
     "homepage": "https://github.com/ammonkc/laravel-sabre-api",
@@ -25,7 +28,7 @@
         }
     },
     "require": {
-        "php": "^7.2",
+        "php": "^7.1",
         "ammonkc/sabre-api": "@dev",
         "illuminate/support": "^5.8|^6.0"
     },
