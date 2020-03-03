@@ -6,6 +6,10 @@ All notable changes to `laravel-sabre-api` will be documented in this file
 
 - initial release
 
+## 0.2.0 - 2020-03-03
+
+- laravel 7.0 support.
+
 ## 0.1.1
 - Added Laravel 6.0 support.
 
